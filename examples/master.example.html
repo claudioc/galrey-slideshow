@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Galrey presentation system</title>
+    <link rel="stylesheet" type="text/css" href="galrey/themes/default.css">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src="galrey/bootstrap.js"></script>
+    <script>
+    
+    Galrey.options = {
+      dimensions: "auto",
+      transition_ms: 300,
+      autoplay_ms: 3000,
+      autostart: false,
+      message_ms: 500,
+      mouse_click: 'smart',
+      numbers: true,
+    };
+    
+    Galrey.fonts = {
+      google: {
+        families: [ 'Tangerine', 'Cantarell' ]
+      },
+      custom: {
+        families: ['Droid Sans'],
+        urls: ['galrey/fonts/fonts.css']
+      }
+    };
+    
+    </script>
+  </head>
+  <body>
+  
+    <div id="galrey">
+    
+      <header>Galrey presentation system demo</header>
+      <footer>By Claudio Cicali &ndash; &lt;claudio.cicali@gmail.com&gt;</footer>
+      
+      <div class="galrey_slides">
+
+        <article>
+          <section>
+            <h1 class="shout galrey">GALREY</h1>
+            <h1>A gentle introduction</h1>
+            <p><strong>Galrey</strong> is a <em>presentation system</em> entirely built on a CSS(3), HTML(5) and JavaScript foundation.</p>
+            <p>It has been inspired by <strong>S5</strong> of Eric Meyer fame and the <strong>html5rocks</strong> website.</p>
+            <p>Please use Chrome or Safari for a better experience: Galrey itself is being developed with a <strong>top down</strong> approach: first make it works with better browsers (<strong>Webkit</strong> based) and eventually every feature will be ported to the less fancy browsers.</p>
+            <p>Now press &rarr;, D, or just swipe right (h for help)</p>
+          </section>
+        </article>
+
+        <article>
+          <section>
+            <h1>What <span class="galrey">Galrey</span> gives you</h1>
+            <ul>
+              <li>A robust and straightforward HTML5 "master" file to insert your slides into</li>
+              <li>A simple and extensibile way to add your own CSS (think «theming»)</li>
+              <li>Keyboard and touch slides navigation (next, prev, first, etc)</li>
+              <li>Auto or fixed viewport resizing</li>
+              <li>Unobtrusive enhancement (look: no scripts! No styles!)</li>
+              <li>Works offline</li>
+              <li>(continue...)</li>
+            </ul>
+          </section>
+        </article>
+
+        
+        <article>
+          <section>
+            <h1 class="message">What Galrey gives you &ndash; (continued)</h1>
+            <ul>
+              <li>Autoplay</li>
+              <li>Nifty transitions and animations (via CSS3)</li>
+              <li>Sticky header and footer</li>
+              <li>On screen help (just press ?)</li>
+              <li>Audio and Video HTML5 elements (with smart start/stop)</li>
+              <li>Audio volume timed decrease</li>
+              <li>Good printing support</li>
+              <li>jQuery goodness</li>
+              <li>Every slide is bookmarkable</li>
+            </ul>
+          </section>
+        </article>
+        
+        <article>
+          <section>
+            <h1>What <span class="galrey">Galrey</span> WILL give you</h1>
+            <ul>
+              <li>Better tablets/iOS integration</li>
+              <li>A CSS grid framework for better element placing</li>
+              <li>Other timed goodies</li>
+              <li>Support for Firefox and IE9 (and Opera as well)</li>
+              <li>Better printing support</li>
+              <li>Custom animations/plugins</li>
+              <li>Remotely controlled synchronous slideshows</li>
+            </ul>
+          </section>
+        </article>
+        
+        <article>
+          <section>
+            <h1>A slide it's simply an &lt;article&gt;</h1>
+            <pre>
+                    &lt;article&gt;
+                    
+                      &lt;section&gt;
+                      
+                        &lt;h1&gt;A slide it's simply an &lt;article&gt;&lt;/h1&gt;
+                        
+                        &lt;pre&gt;...&lt;/pre&gt;
+                        
+                      &lt;/section&gt;
+                      
+                    &lt;/article&gt;
+            </pre>
+            <p>The <strong>article</strong> and <strong>section</strong> elements are mandatory.</p>
+            <p>You can then put whatever you like into the section child.</p>
+          </section>
+        </article>
+        
+        <article>
+          <section>
+            <h1>The master file</h1>
+          <pre>
+&lt;!DOCTYPE html&gt; 
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My presentation&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="galrey/themes/default.css"&gt;
+    &lt;link rel="stylesheet" type="text/css" href="theme.css"&gt;
+    &lt;script src="galrey/bootstrap.js"&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="galrey"&gt;
+
+      &lt;header&gt;My header&lt;/header&gt;
+      &lt;footer&gt;My footer&lt;/footer&gt;
+
+      &lt;div class="slides"&gt;
+
+        &lt;article&gt;
+          &lt;section&gt;
+            &lt;h1&gt;Slide title&lt;/h1&gt;
+            &lt;p&gt;A Paragraph&lt;/p&gt;
+          &lt;/section&gt;
+        &lt;/article&gt;
+
+        &lt;article&gt;
+          &lt;section&gt;
+            &lt;h1&gt;Another slide title&lt;/h1&gt;
+            &lt;p&gt;Another paragraph&lt;/p&gt;
+          &lt;/section&gt;
+        &lt;/article&gt;
+      &lt;/div&gt;
+
+    &lt;/div&gt;
+
+  &lt;/body&gt;
+
+&lt;/html&gt;
+
+          </pre>
+          </section>
+        </article>
+
+        <article>
+          <section>
+            <h1>A video (just press space or S)</h1>
+            <video width="320" height="240" controls preload="none">
+              <source src="media/video.ogv" type='video/ogg'>
+              <source src="media/video.mp4" type='video/mp4'>
+            </video>
+          </section>
+        </article>
+
+        <article>
+          <section>
+            <h1>A video (autoplay), two columns</h1>
+            <div class="column-2">
+              <h2>Column title here</h2>
+              <video width="320" height="240" controls autoplay preload="none">
+              <source src="media/video.ogv" type='video/ogg'>
+              <source src="media/video.mp4" type='video/mp4'>
+            </video>
+I'm a thing. Why would a robot need to drink? I could if you hadn't turned on the light and shut off my stereo. Aww, it's true. I've been hiding it for so long. They're like sex, except I'm having them! Well, let's just dump it in the sewer and say we delivered it.
+No, she'll probably make me do it. Shinier than yours, meatbag. Hey, what kinda party is this? There's no booze and only one hooker. I had more, but you go ahead.  It's okay, Bender. I like cooking too. I don't want to be rescued.
+It doesn't look so shiny to me. Too much work. Let's burn it and say we dumped it in the sewer. Of all the friends I've had... you're the first. 
+          </section>
+        </article>
+        
+        <article>
+          <section>
+            <h1>Audio (just press space or S)</h1>
+            <h1 class="message">And, btw, this is an h1 with the "message" class</h1>
+            <audio src="media/audio.mp3" controls preload="none">
+              Audio element not supported
+            </audio>
+          </section>
+        </article>
+
+        <article>
+          <section>
+          <h1>YouTube is easy</h1>
+          <h1 class="message">YouTube embedding is a piece of cake</h1>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/651UYYxrfh0?fs=1&amp;hl=en_US&amp;color1=0x234900&amp;color2=0x4e9e00"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/651UYYxrfh0?fs=1&amp;hl=en_US&amp;color1=0x234900&amp;color2=0x4e9e00" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+          </section>
+        </article>
+
+      </div> <!-- slides --> 
+ 
+    </div> <!-- galrey --> 
+
+  </body> 
+
+</html>
+
+

@@ -1,0 +1,63 @@
+body {
+  font-family: 'Droid Sans', Arial, sans-serif !important;
+  background-color: white;
+  color: white;
+}
+
+li {
+  text-align: left;
+}
+
+#galrey {
+}
+
+article {
+  background-color: black;
+}
+
+header,
+footer {
+  position: absolute;
+  left: 0;
+  padding: .3em;
+  font-size: 83%;
+  width: 100%;
+  background-color: #333;
+  color: #888;
+  z-index: 110;
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+}
+
+header {
+  top: 0; 
+}
+
+.column-2 {
+  width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	-webkit-column-rule: 2px solid #444;
+	-moz-column-count: 2;
+	-moz-column-gap: 20px;
+	-moz-column-rule: 2px solid #444;
+	column-count: 2;
+	column-gap: 20px;
+}
+
+#galrey_message {
+}
+
+#galrey_message span {
+}
+
+#galrey_numbers {
+}
+
+#galrey_numbers span {
+}

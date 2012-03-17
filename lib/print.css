@@ -1,0 +1,69 @@
+@page {
+  size: 600pt;
+}
+
+* {
+ background-color: white !important;
+ background-image: none !important;
+}
+
+iframe,
+audio,
+embed,
+video {
+  display:none; 
+}
+
+#galrey {
+  height: 100%;
+  width: 100%;
+}
+.galrey_slides {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+article {
+  width: 600pt;
+  border: 1px solid red;
+  page-break-after: always;
+}
+
+article > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+article section:first-child {
+  line-height: 2em;
+  text-align: center;
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+  border: 1px solid red;
+}
+
+#galrey_help,
+#galrey_numbers,
+#galrey_message {
+  display: none;
+}
+
+h1.message {
+  display: block;
+}
+
+.column-2 {
+  width: auto;
+	-webkit-column-count: 0;
+	-moz-column-count: 0;
+	column-count: 0;
+	-webkit-column-gap: 0;
+	-webkit-column-rule-width: 0;
+	-moz-column-rule-width: 0;
+	-moz-column-gap: 0;
+	
+}
+
+

@@ -1,0 +1,94 @@
+@import url(animations.css);
+
+.galrey_popup {
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: 450px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow:0px 0px 8px #161919;
+  -moz-box-shadow:0px 0px 8px #161919;
+}
+
+.galrey_popup > div {
+  padding: 10px;
+  position: relative;
+  color: black;
+}
+
+.galrey_popup img.icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.galrey_popup em {
+  color: black;
+  display: inline-block;
+  padding: 3px 10px 3px 10px;
+  text-shadow: none;
+  letter-spacing: 0;
+  margin: 0 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: cyan;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 5px;
+  -moz-box-shadow:0px 0px 6px #191919;
+  -webkit-box-shadow:0px 0px 6px #191919;
+  box-shadow:0px 0px 6px #191919;
+}
+
+#galrey_message {
+  position: absolute;
+  bottom: 10%;
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 100%;
+  z-index: 2000;
+}
+
+#galrey_message span {
+  background-color: #eaeaea;
+  color: gray;
+  padding: .2em .3em;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow:0px 0px 6px #191919;
+  box-shadow: 0px 0px 6px #191919;
+  -moz-box-shadow: 0px 0px 6px #191919;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+#galrey_numbers {
+  position: absolute;
+  background-color: transparent;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 5em;
+  z-index: 2000;
+  right: 10px;
+  top: 50px;
+}
+
+#galrey_numbers span {
+  background-color: #eaeaea;
+  color: gray;
+  padding: .2em .3em;
+  -webkit-border-radius: 10px;
+  -webkit-box-shadow:0px 0px 6px #191919;
+  box-shadow: 0px 0px 6px #191919;
+  -moz-box-shadow: 0px 0px 6px #191919;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+
